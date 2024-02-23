@@ -1,13 +1,6 @@
-#container-grid{
-    display: grid;
-    grid-template:
-    "header" 100px
-    "navbar" 50px
-    "main" auto
-    "sidebar" 100px
-    "footer" 50px;
-    text-align: center;
-    }
+*{
+    height : 100%;
+}
 /*Estilos Grid Items*/
 header {
     grid-area: header;
@@ -29,6 +22,19 @@ header {
     grid-area: footer;
     background-color: red;
     }
+    #container-grid{
+    display: grid;
+    grid-template:
+    "header" 100px
+    "navbar" 50px
+    "main" auto
+    "sidebar" 100px
+    "footer" 50px;
+    text-align: center;
+    }
+     body{
+        min-height: 100%;
+     }
     /*Resolución tabletas*/
 @media screen and (min-width:768px) {
     .container-grid{
